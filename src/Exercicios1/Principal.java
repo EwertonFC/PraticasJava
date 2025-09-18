@@ -3,8 +3,6 @@ package Exercicios1;
 public class Principal {
     public static void main(String[] args) {
 
-        /*
-
         //tarefa 1
         Pessoa pessoa1 = new Pessoa();
         pessoa1.pessoaCumprimentar();
@@ -25,7 +23,7 @@ public class Principal {
         musica1.pegaMediaAvaliacoes();
         musica1.exibeFichaTecnica();
 
-        */
+
         //tarefa 4
         Carro carro1 = new Carro();
         carro1.modelo = "HB20";
@@ -34,6 +32,14 @@ public class Principal {
         carro1.idadeCarro = carro1.pegaIdadeCarro();
 
         carro1.exibeFichaTecnica();
+
+
+        //tarefa 5
+        Aluno aluno1 = new Aluno();
+        aluno1.nome = "Ewerton";
+        aluno1.idade = 25;
+
+        aluno1.exibeInformacoes();
     }
 
 }
