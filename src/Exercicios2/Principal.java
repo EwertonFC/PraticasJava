@@ -33,7 +33,16 @@ public class Principal {
         System.out.println("Produto com desconto: " + produto1.aplicaDesconto());
         */
 
-
+        // class Aluno
+        Aluno aluno1 = new Aluno();
+        aluno1.setNome("Ewerton");
+        aluno1.setNota1(7);
+        aluno1.setNota2(8);
+        aluno1.setNota3(10);
+        double media = aluno1.calcularMedia(aluno1.getNota1(), aluno1.getNota2(), aluno1.getNota3());
+        System.out.println(
+                "A média de " + aluno1.getNome() + " é: " + media
+        );
 
     }
 }
