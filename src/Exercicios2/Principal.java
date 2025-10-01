@@ -34,6 +34,7 @@ public class Principal {
         */
 
         // class Aluno
+        /*
         Aluno aluno1 = new Aluno();
         aluno1.setNome("Ewerton");
         aluno1.setNota1(7);
@@ -43,6 +44,13 @@ public class Principal {
         System.out.println(
                 "A média de " + aluno1.getNome() + " é: " + media
         );
+        */
+
+        // class Livro
+        Livro livro1 = new Livro();
+        livro1.setAutor("Ewerton");
+        livro1.setTitulo("Cidade das Sombras");
+        livro1.exibirDetalhes(livro1.getAutor(), livro1.getTitulo());
 
     }
 }
