@@ -1,9 +1,9 @@
 package Exercicios3.Exercicios3_2;
 
 public class Animal {
-    String nome;
-    double peso;
-    String raca;
+    private String nome;
+    private double peso;
+    private String raca;
 
 
     public String getNome() {
