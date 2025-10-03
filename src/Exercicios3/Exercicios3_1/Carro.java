@@ -1,4 +1,4 @@
-package Exercicios3;
+package Exercicios3.Exercicios3_1;
 
 // Classe Carro
 public class Carro {
