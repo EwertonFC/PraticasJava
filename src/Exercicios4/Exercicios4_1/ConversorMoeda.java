@@ -13,7 +13,7 @@ public class ConversorMoeda implements ConversaoFinanceira{
     }
 
     @Override
-    public double converterDolarParaReal(double valorDolar) {
+    public double converterDolarParaReal(double valor) {
 
         return valorDolar / 5.36;
     }
