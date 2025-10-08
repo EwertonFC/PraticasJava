@@ -2,6 +2,8 @@ import Exercicios4.Exercicios4_1.ConversorMoeda;
 import Exercicios4.Exercicios4_2.CalculadoraSalaRetangular;
 import Exercicios4.Exercicios4_3.TabuadaMultiplicacao;
 import Exercicios4.Exercicios4_4.ConversorTemperaturaPadrao;
+import Exercicios4.Exercicios4_5.Ebook;
+import Exercicios4.Exercicios4_5.LivroFisico;
 
 void main() {
 
@@ -32,13 +34,28 @@ void main() {
 //    tabuada.mostrarTabuada(tabuada.getNumerox());
 
     //Exercicio 4_4
-    ConversorTemperaturaPadrao conversao = new ConversorTemperaturaPadrao();
-    conversao.setTemperatura(23);
+//    ConversorTemperaturaPadrao conversao = new ConversorTemperaturaPadrao();
+//    conversao.setTemperatura(23);
 
-    System.out.println("Temperatura: " + conversao.getTemperatura());
-    System.out.println("Convertendo temperatura de C para F: " +
-            conversao.celsiusParaFahrenheit(conversao.getTemperatura()) + " e F para C: " +
-            conversao.fahrenheitParaCelsius(conversao.getTemperatura()));
+//    System.out.println("Temperatura: " + conversao.getTemperatura());
+//    System.out.println("Convertendo temperatura de C para F: " +
+//            conversao.celsiusParaFahrenheit(conversao.getTemperatura()) + " e F para C: " +
+//            conversao.fahrenheitParaCelsius(conversao.getTemperatura()));
+
+    //Exercicio 4_5
+    LivroFisico livro = new LivroFisico();
+    livro.setValorProduto(20);
+
+    System.out.println("Preço livro físico: " + livro.calcularPrecoFinal(livro.getValorProduto()));
+
+    Ebook ebook = new Ebook();
+    ebook.setValorProduto(20);
+
+    System.out.println("Preço ebook: " + ebook.calcularPrecoFinal(ebook.getValorProduto()));
+
+
+
+
 
 
 }
