@@ -1,12 +1,3 @@
-import Exercicios4.Exercicios4_1.ConversorMoeda;
-import Exercicios4.Exercicios4_2.CalculadoraSalaRetangular;
-import Exercicios4.Exercicios4_3.TabuadaMultiplicacao;
-import Exercicios4.Exercicios4_4.ConversorTemperaturaPadrao;
-import Exercicios4.Exercicios4_5.Ebook;
-import Exercicios4.Exercicios4_5.LivroFisico;
-import Exercicios4.Exercicios4_6.Produto;
-import Exercicios4.Exercicios4_6.Servico;
-
 void main() {
 
     //Exercicio 4_1
@@ -55,22 +46,22 @@ void main() {
 //
 //    System.out.println("Preço ebook: " + ebook.calcularPrecoFinal(ebook.getValorProduto()));
 
-    //Exercicio 4_6:
-    Produto produto = new Produto();
-    produto.setQuantidadeProduto(9);
-
-    Servico servico = new Servico();
-    servico.setQuantidadeHorasServico(5);
-    servico.setPrecoHoraServico(10);
-
-    Servico servico2 = new Servico();
-    servico2.setQuantidadeHorasServico(10);
-    servico2.setPrecoHoraServico(10);
-
-
-
-    System.out.println(produto.calcularPrecoFinal());
-    System.out.println(servico2.calcularPrecoFinal());
+//    //Exercicio 4_6:
+//    Produto produto = new Produto();
+//    produto.setQuantidadeProduto(9);
+//
+//    Servico servico = new Servico();
+//    servico.setQuantidadeHorasServico(5);
+//    servico.setPrecoHoraServico(10);
+//
+//    Servico servico2 = new Servico();
+//    servico2.setQuantidadeHorasServico(10);
+//    servico2.setPrecoHoraServico(10);
+//
+//
+//
+//    System.out.println(produto.calcularPrecoFinal());
+//    System.out.println(servico2.calcularPrecoFinal());
 
 
 }
