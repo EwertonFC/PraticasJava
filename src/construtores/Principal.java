@@ -1,8 +1,6 @@
 package construtores;
 
-import construtores.modelos.Nome;
-import construtores.modelos.Produto;
-import construtores.modelos.ProdutoPerecivel;
+import construtores.modelos.*;
 
 import java.util.ArrayList;
 
@@ -38,5 +36,30 @@ public class Principal {
             System.out.println(item);
         }
 
+
+        Animal animal1 = new Animal();
+        Animal animal2 = new Animal();
+        animal1.setNome("sem nome");
+        animal2.setNome("sem nome");
+
+
+        Cachorro cachorro = new Cachorro();
+        cachorro.setRaca("pastor alemão");
+        cachorro.setNome("Luther");
+
+        ArrayList<Animal> animal = new ArrayList<>();
+
+        animal.add(animal1);
+        animal.add(animal2);
+        animal.add(cachorro);
+
+
+        for (Animal item : animal){
+            if (item instanceof Cachorro){
+                Cachorro casting = (Cachorro) item;
+                System.out.println(casting.getRaca());
+            }
+
+        }
     }
 }
