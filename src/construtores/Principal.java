@@ -1,6 +1,8 @@
 package construtores;
 
+import construtores.modelos.Nome;
 import construtores.modelos.Produto;
+import construtores.modelos.ProdutoPerecivel;
 
 import java.util.ArrayList;
 
@@ -19,6 +21,22 @@ public class Principal {
 
         System.out.println(listaObjetos.size());
         System.out.println(listaObjetos.get(2));
+
+        ProdutoPerecivel produtoPerecivel1 = new ProdutoPerecivel("Leite", 10, 5, "20/10/2026");
+        System.out.println(produtoPerecivel1);
+
+        Nome nome1 = new Nome("Ewerton");
+        Nome nome2 = new Nome("Emerson");
+        Nome nome3 = new Nome("Danni");
+
+        ArrayList<Nome> nomes = new ArrayList<>();
+        nomes.add(nome1);
+        nomes.add(nome2);
+        nomes.add(nome3);
+
+        for (Nome item: nomes){
+            System.out.println(item);
+        }
 
     }
 }
