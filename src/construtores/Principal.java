@@ -1,10 +1,7 @@
 package construtores;
 import java.text.DecimalFormat;
 import construtores.modelos.*;
-import construtores.modelos2.Circulo;
-import construtores.modelos2.Forma;
-import construtores.modelos2.Mercadoria;
-import construtores.modelos2.Quadrado;
+import construtores.modelos2.*;
 
 import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
@@ -104,6 +101,27 @@ public class Principal {
 
         for (Forma item : formas){
             System.out.println(df.format(item.calcularArea()));
+        }
+
+
+        ContaBancaria conta1 = new ContaBancaria(11134456, 420);
+        ContaBancaria conta2 = new ContaBancaria(22234456, 680);
+        ContaBancaria conta3 = new ContaBancaria(33324668, 1000);
+
+        ArrayList<ContaBancaria> contas = new ArrayList<>();
+        contas.add(conta1);
+        contas.add(conta2);
+        contas.add(conta3);
+
+        double controle = 0;
+        ContaBancaria maiorSaldo = null;
+        for (int i = 0; i < contas.size(); i++) {
+
+            if (contas.get(i).getSaldo() > controle){
+                maiorSaldo = contas.get(i);
+            }
+            System.out.println("A conta com maior saldo é: " + maiorSaldo.getNumeroConta() +
+                    "\nSeu saldo é de: " + maiorSaldo.getSaldo());
         }
 
 
