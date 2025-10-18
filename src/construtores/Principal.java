@@ -1,8 +1,12 @@
 package construtores;
 import java.text.DecimalFormat;
 import construtores.modelos.*;
+import construtores.modelos2.Circulo;
+import construtores.modelos2.Forma;
 import construtores.modelos2.Mercadoria;
+import construtores.modelos2.Quadrado;
 
+import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 
 public class Principal {
@@ -80,5 +84,34 @@ public class Principal {
 
         System.out.println(precoTotal);
         System.out.println("Preco médio dos produtos: " + df.format(precoTotal/listaDeMercadorias.size()));
+
+        Circulo circulo1 = new Circulo();
+        circulo1.setRaio(6);
+        Circulo circulo2 = new Circulo();
+        circulo2.setRaio(8);
+
+        Quadrado quadrado1 = new Quadrado();
+        quadrado1.setLado(10);
+        Quadrado quadrado2 = new Quadrado();
+        quadrado2.setLado(8);
+
+
+        ArrayList<Forma> formas = new ArrayList<>();
+        formas.add(circulo1);
+        formas.add(circulo2);
+        formas.add(quadrado1);
+        formas.add(quadrado2);
+
+        for (Forma item : formas){
+            System.out.println(df.format(item.calcularArea()));
+        }
+
+
+
+
+
+
+
     }
+
 }
