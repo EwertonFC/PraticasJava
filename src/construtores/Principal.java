@@ -1,6 +1,7 @@
 package construtores;
-
+import java.text.DecimalFormat;
 import construtores.modelos.*;
+import construtores.modelos2.Mercadoria;
 
 import java.util.ArrayList;
 
@@ -61,5 +62,23 @@ public class Principal {
             }
 
         }
+
+        Mercadoria mercadoria = new Mercadoria("Caixa de som", 160);
+        Mercadoria mercadoria2 = new Mercadoria("Iphone", 3500);
+        Mercadoria mercadoria3 = new Mercadoria("Tenis", 500);
+
+        ArrayList<Mercadoria> listaDeMercadorias = new ArrayList<>();
+        listaDeMercadorias.add(mercadoria);
+        listaDeMercadorias.add(mercadoria2);
+        listaDeMercadorias.add(mercadoria3);
+
+        DecimalFormat df = new DecimalFormat("#.00");
+        double precoTotal = 0;
+        for (int i = 0; i < listaDeMercadorias.size(); i++) {
+            precoTotal += listaDeMercadorias.get(i).getPreco();
+        }
+
+        System.out.println(precoTotal);
+        System.out.println("Preco médio dos produtos: " + df.format(precoTotal/listaDeMercadorias.size()));
     }
 }
